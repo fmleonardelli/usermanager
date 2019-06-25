@@ -10,5 +10,7 @@ object Dependencies {
 
   val jacksonDataTypes = "com.fasterxml.jackson.datatype" % "jackson-datatype-jsr310" % "2.9.8"
 
-  val userManagerDependencies: Seq[ModuleID] = Seq(scalaTestPlusPlay, mongojack, jackson, jacksonDataTypes)
+  val scalaz = "org.scalaz" % "scalaz-core_2.12" % "7.2.17"
+
+  val userManagerDependencies: Seq[ModuleID] = Seq(scalaTestPlusPlay, mongojack, jackson, jacksonDataTypes, scalaz)
 }
